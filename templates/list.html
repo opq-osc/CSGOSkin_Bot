@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css">
+  <script src="//unpkg.com/layui@2.6.8/dist/layui.js"></script>
+  <meta charset="UTF-8">
+  <title>监控列表</title>
+</head>
+<body>
+  <div class="layui-fluid" style="margin-top: 5px">
+    <div class="container-fluid layui-border-blue" style="border-radius: 5px;margin-top: 5px">
+      <fieldset class="layui-elem-field layui-field-title" align="center">
+        <legend>皮肤监控列表</legend>
+      </fieldset>
+      <table class="layui-hide" id="test"></table>
+      <div style="text-align: center">当前用户：{{QQ}}</div>
+    </div>
+  </div>
+
+<script>
+  layui.use('table', function(){
+    var table = layui.table;
+    var util = layui.util;
+
+    table.render({
+      elem: '#test'
+      ,url: '/db/{{Code}}'
+      ,method: 'get'
+      ,cols: [[
+        {field:'market', width:60, title: '平台',align:'center'}
+        ,{field:'name', width:150, title: '名称'}
+        ,{field:'price_on_mark', width:90, title: '添加价格'}
+        ,{field:'now_price', width:90, title: '实时价格'}
+        ,{field:'creat_time', width: 125, title: '添加时间', sort: true
+          , templet: function (d) { return util.toDateString(d.creat_time * 1000, "yyyy-MM-dd HH:mm:ss") } } //转换时间戳为公制时间
+        ,{field:'update_time', width: 125, title: '更新时间', sort: true
+          , templet: function (d) { return util.toDateString(d.update_time * 1000, "yyyy-MM-dd HH:mm:ss") } } //转换时间戳为公制时间
+        ,{field:'url', title: '详情页'}
+      ]]
+      ,page: false
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "host": "http://127.0.0.1",
+  "port": 2333,
+  "group_blacklist": [],
+  "friend_blacklist": [],
+  "blocked_users": [],
+  "webhook": false,
+  "webhook_post_url": "http://127.0.0.1:5000",
+  "webhook_timeout": 20,
+  "phone": 12345678912,
+  "pwd": "Password",
+  "WebAPI": "http://127.0.0.1:7355/",
+  "interval": 15,
+  "qq": 1107459688,
+  "superAdmin": 123456789,
+  "apscheduler_autostart": true,
+  "apscheduler_log_level": 30,
+  "apscheduler_config": {
+    "apscheduler.timezone": "Asia/Shanghai"
+  }
+}

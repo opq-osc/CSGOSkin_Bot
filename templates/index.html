@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/layui@2.6.8/dist/css/layui.css">
+    <meta charset="UTF-8">
+    <title>王守義拾叁香价格监控</title>
+</head>
+<body>
+    <div class="layui-fluid layui-row">
+        {% if not flag%}
+            <div align="center">
+          <h2>哦呀，网页不见了呢~</h2>
+            </div>
+        {% endif %}
+        <fieldset class="layui-elem-field layui-field-title" align="center">
+            <legend>已支持Buff、悠悠有品、Igxe及小黑盒</legend>
+        </fieldset>
+        <p><b>使用说明：</b><br>
+            在手机APP进入要监控的饰品详情页面，点击分享按钮；点击<b>复制</b>按钮(ig平台
+            需点击<b>复制链接</b>按钮，再点复制)，将饰品分享链接发送给QQ机器人：<b>1107459688</b>
+            <br>命令格式如：饰品添加https://h5.youpin898.com/goodsInfo.html?id=6734486，机器人回复饰品信息即添加成功。
+            <br><del>注意：8f的分享链接最前面有中文文字，记得删除再点击提交按钮</del>
+            <br>如果添加饰品时机器人无响应，请先检查命令格式是否正确，或饰品链接是否正确（本项目仅支持单个饰品分享链接，无法监控某一大类的饰品）
+            <br>更多问题可在小黑盒搜索<b>王守義拾叁香</b>，或在GitHub提交Issue，看到了都会回复的。
+        </p>
+        <br>
+        <p><b>指令说明:</b><br>
+            1.添加饰品操作：<b>饰品添加+饰品分享链接</b>，如：<b>饰品添加https://h5.youpin898.com/goodsInfo.html?id=6734486</b><br>
+            2.查询已保存饰品：<b>饰品列表查看</b>，发送后机器人将会发送一个有效期为半小时的链接，点击进入即可查看已保存饰品数据，并可在该网页中进行饰品删除操作
+        </p>
+        <br>
+        <p>项目地址：<a href="https://github.com/Lord2333/CSGOSkin_Bot" style="color: #00A5ED">GitHub</a></p>
+        <p>Powered By Flask.<b>人生苦短，我用Py</b>
+        <p>如果觉得本项目对你有用的话，可以请作者嚯一杯咖啡☕。</p>
+        <a href="https://imgse.com/i/vzwcb4"><img src="https://s1.ax1x.com/2022/09/16/vzwcb4.md.png" alt="vzwcb4.png" border="0" width="50%"/></a>
+    </div>
+</body>
+</html>

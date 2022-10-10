@@ -1,0 +1,7 @@
+asyncio
+botoy
+bs4
+flask
+httpx
+requests
+
