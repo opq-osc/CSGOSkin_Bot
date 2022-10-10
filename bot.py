@@ -1,4 +1,5 @@
-import asyncio, json
+import asyncio
+import json
 
 from botoy import AsyncBotoy, FriendMsg, jconfig
 from botoy.decorators import equal_content, ignore_botself
@@ -36,4 +37,3 @@ def help(_):
 
 if __name__ == "__main__":
     asyncio.run(bot.run())
-
